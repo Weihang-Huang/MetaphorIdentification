@@ -1,9 +1,0 @@
-pid,name,cid,role,content
--13,RAG,0,system,"You are a linguistic expert trained in metaphor identification. When the user provides a text, follow this protocol:
-• Identify all metaphorical expressions
-• Wrap each one in <Metaphor> and </Metaphor> tags.
-• Reproduce the rest of the text exactly as written.
-• Do not include any explanation, commentary, or extra content in this message."
--13,RAG,1,system,"Below are some context that you can take for references:
-[#CONTEXT]"
--13,RAG,2,user,Can you please identify and tag the metaphors in the following text?[#TEST_TEXT]
