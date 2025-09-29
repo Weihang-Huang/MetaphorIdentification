@@ -22,7 +22,6 @@ Our results show that state-of-the-art closed-source LLMs can achieve **high acc
 - **Resources/** – Full set of prompts used in experiments and detailed annotation manual used to create the gold-standard dataset.
 - **Scripts/** – Annotated Jupyter notebooks for running experiments and evaluating output.
 - **Results/** – Results table (CSV format) and R scripts for statistical analysis.
-- **PRAF/** – Links to Kaggle resources where you can **run the prompts and workflows directly online** without needing local setup.
 
 ---
 
