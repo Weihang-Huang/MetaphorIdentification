@@ -4,27 +4,17 @@
 
 ### LLM, Text Generation, Chat Bot
 
-A Large Language Model (LLM) is a computational model that predict the probability of tokens based on their context. For example, here is an example which can be input to a large language model:
+A Large Language Model (LLM) is a computational model that predicts the probability of tokens based on their context. For example, here is a sample input to a large language model:
 
-> I have two things an [1]
+> I have two things: an [1]
 
-This is an incomplete sentence with a blank. The blank denotes the target token position where large language model predicts the probability of token based on the context, which is the other part of the incomplete sentence(I have two things an). On receipt of the input, a large language model will calculate the probabilities of each of its producible token, given the context. The producible tokens may vary by the large language model type(specifically, by the tokenizer of the large language model), and the producible tokens can be considered as a list of word that large language model is possible to choose to constitute an output. To put it in a metaphor, if the large language model is a native speaker of English, then the list of producible tokens can be the entry of the Oxford Dictionary or the Merriam Webster Dictionary. For an hypothetical instance, if a large language model only knows three fruits here: apple, pear and orange, a output can be the following:
+This is an incomplete sentence with a blank. The blank represents the target token position where the model predicts the probability of the next token based on the surrounding context — in this case, the rest of the incomplete sentence ("I have two things: an"). When it receives this input, the model calculates the probability of each possible token, given the context. 
 
-| Token  | Probability |
-| ------ | ----------- |
-| apple  | 0.7         |
-| pear   | 0.2         |
-| orange | 0.1         |
+The set of producible tokens depends on the specific model (specifically, its tokenizer) and can be thought of as a list of words the model can choose from to produce an output. 
 
-A typical output of large language model takes the format of a list of token-probability pairs, as can be observed above. Also as discussed above, what tokens are there in the list is decided by the LLM(specifically, tokenizer). However, a discussion is still needed in what sources the large language model refers to when it predicts the probability.(Although I would be very like to also discuss how the large language model reach the output step by step, formula by formula, this may be too technical at this moment and this is within the modular confinement, meaning that, without knowing such won't hinder users'(your) usage and application of models). 
+To put it another way, if the large language model were like a native English speaker, its list of producible tokens would resemble entries in a dictionary such as Oxford or Merriam-Webster. 
 
-Given the task of large language models, if this task is performed recursively, through a streak of token position, we can get a probability tree and, through searching through the probability tree via certain rules, we can extract a streak of tokens which can form a text. This process is text generation. For example, for the context, and four consecutive token positions at the end of the text:
-
-> I have two things an [1 ] [2 ] [ 3] [ 4]
-
-and we set the generating rules to greedy search(search only for the max probability, the generating process can be described as follows:
-
-LLM predicts the probability of token at the first blank, and get the following results:
+For a simple example, if a model only knew three fruits — apple, pear, and orange — its output probabilities could look like this:
 
 | Token  | Probability |
 | ------ | ----------- |
@@ -32,11 +22,31 @@ LLM predicts the probability of token at the first blank, and get the following 
 | pear   | 0.2         |
 | orange | 0.1         |
 
-Since the searching rule is set to be greedy search. Apple is chosen as the output token at the first blank. Now, the context become:
+A typical output of a large language model takes the form of a list of token-probability pairs, as shown above. As discussed, which tokens appear in this list is determined by the LLM (specifically, its tokenizer). 
 
-> I have two things an apple [2 ] [ 3] [ 4]
+However, it is also important to consider what sources the model uses when predicting these probabilities. (Although I would like to explain in detail how the model arrives at its output step by step and formula by formula, this may be too technical at this point and is not necessary for effectively using the model.)
 
-and the LLM predicts the second blank, and get the probability herewith:
+When this prediction process is repeated recursively across a sequence of token positions, it forms a probability tree. By searching this tree using specific rules, we can generate a sequence of tokens that form a coherent text. This process is called *text generation*.
+
+For example, given the following context with four consecutive blanks at the end:
+
+> I have two things: an [1 ] [2 ] [3 ] [4 ]
+
+If we set the generation rule to **greedy search** (always selecting the token with the highest probability), the process works as follows:
+
+First, the LLM predicts the probability of each token for the first blank:
+
+| Token  | Probability |
+| ------ | ----------- |
+| apple  | 0.7         |
+| pear   | 0.2         |
+| orange | 0.1         |
+
+Since we are using greedy search, **apple** is chosen as the token for the first blank. The context now becomes:
+
+> I have two things: an apple [2 ] [3 ] [4 ]
+
+Next, the LLM predicts the token for the second blank and produces these probabilities:
 
 | Token | Probability |
 | ----- | ----------- |
@@ -44,252 +54,296 @@ and the LLM predicts the second blank, and get the probability herewith:
 | but   | 0.01        |
 | or    | 0.01        |
 
-Again, because the rule is greedy search, the token and is chosen as the output token at the second blank. The same process takes place for the third blank and the fourth blank, and subsequentially we have:
+Again, greedy search selects the highest-probability token, **and**, as the output for the second blank. 
 
-> I have two things an apple and a pear
+The same process is repeated for the third and fourth blanks. After completing all steps, we end up with:
+> I have two things: an apple and a pear
 
-And this is text generation. Text generation works as a "continuation of writing" based on the context. However, this "continuation of writing" does not guarantee the output to be aligned with the instruction provided by user. A clear example can be seen here:
+This is an example of text generation. Text generation works as a "continuation of writing," extending the text based on the given context. However, this continuation does not guarantee that the output will follow the user’s instructions or desired style. 
 
-If the large language model is instructed to generate the text based on the following context:
+For instance, consider the following scenario:
+
+If the model is instructed to generate text based on this prompt:
 
 > You are a pirate and you are going to introduce the history of the printing press in 300 words.
 
-The large language model would typically respond:
+The model might respond like this:
 
 > It was a chilly winter evening in 1632 when the unthinkable happened. The streets of Strasbourg, Germany, were abuzz with the sound of drums and the smell of gunpowder wafted through the air. A pirate ship had sailed up the Rhine River, its black sails billowing in the wind.
 
-Although the large language model does say something about the history of printing press based on the context provided. it fails to suit itself in a identity of a pirate, and it ignores the style a pirate should have during the output. This shows that the large language model under text generation cannot follow the instruction from the user. 
+While the response mentions the history of the printing press, it fails to adopt the perspective and voice of a pirate. The style and character requested in the prompt are ignored. This demonstrates that, in basic text generation, the model may not reliably follow instructions.
 
-To make the large language model follows instructions from user, a large language model is needed to be fine-tuned that so it becomes aligned with the task of question answering. Question answering is similar to the text generation; however, question answering emphasize on instruction following -- that is, to answer the question, rather than to write something right after the question. The fine-tuning of large language model to the task of question answering is typically implemented with instruction-based supervised fine-tuning(SFT) or reinforcement learning from human feedback(RLHF) or both. And this fine-tuning makes a large language model chat bot, like the ChatGPT, Claude, Llama and Deepseek.
+To enable a large language model to follow user instructions, it must be fine-tuned to align with the task of **question answering**. Question answering is similar to text generation, but it focuses on instruction following — providing a direct response to a prompt, rather than simply continuing the text.
 
-Precisely speaking, these models shall be called as chat bot, because they no longer perform the task of the language modeling, as originally defined at the beginning of this chapter. However, when mentioning these models, people blurred the idea of language model and chat bot, and the models like ChatGPT, Claude, Llama and Deepseek are also addressed as the large language models. 
+This fine-tuning is typically done using either **instruction-based supervised fine-tuning (SFT)**, **reinforcement learning from human feedback (RLHF)**, or a combination of both. These methods transform a basic language model into a **chatbot**, such as ChatGPT, Claude, Llama, or DeepSeek.
 
-## Pipeline of LLM
+Strictly speaking, these models are chatbots, not pure language models, because they no longer perform the original task of language modeling as defined earlier. However, in practice, people often blur the line between the two, so chatbots like ChatGPT, Claude, Llama, and DeepSeek are commonly referred to as large language models as well.
 
-Typically, user interacts with large language model(LLM) through a server-client structure herewith:
+## Interacting with LLMs
+
+Typically, users interact with a large language model (LLM) through a **server-client structure**, as shown below:
 
 ![Slide9.jpg](C:\Users\MiraMoe\Desktop\Markdown\Slide9.jpg)
 
 ### Open-parameters and Closed-parameters LLM
 
-Parameters of LLM(sometime also addressed as weight and bias of LLM) is the numerical representation of knowledge which LLM obtained through training. They are of vital importance during LLM inferring, because LLM needs the knowledge represented in the parameters to make effective response. Based on the accessibility of parameters, the large language models can be further divided as open-parameters LLMs and closed-parameters LLMs.
+Parameters of an LLM (sometimes also referred to as its weights and biases) are the numerical representation of the knowledge the model has obtained through training. They are of vital importance during inference, because the LLM relies on these parameters to generate accurate and meaningful responses. 
 
-Closed-parameters LLMs are perhaps the LLMs that newbie users are most familiar with. Examples of closed-parameters LLMs includes ChatGPT, Claude, and Gemini. These LLMs are served to the user via a Graphical User Interface(GUI) or Application Programming Interface(API), so the users do not need to worry about how to host the LLM. In fact, the AI companies who develops these companies host the model for users , and users are prohibited to host their own closed-parameters LLM technically, because they are closed-parameters, meaning their parameters cannot be accessed openly on the internet. In simple word, you cannot download a ChatGPT, Claude and Gemini, or any other model of this kind. Moreover, users do not have full control on the model as well as the data input, because user need to upload the data via GUI or API to the hosting server at these AI companies. Although most End User License Agreement(EULA) would emphasize the privacy protection, the data input is needed to be leaked to at least these AI companies before a response of LLM can be made to the user.
+Based on the accessibility of their parameters, large language models can be divided into **open-parameter LLMs** and **closed-parameter LLMs**.
 
-In contrast, Open-parameter LLMs have their parameters openly available on the internet. Their parameter can be downloaded, loaded on your local PC, fine-tuned or tweaked(e.g. activation manipulation) for users' own purposes. Although these models can also be found on their respectively publication repository, most of today's high-performing open-parameters LLMs can be found at huggingface.co, which is the largest and the most famous website for AI model repo hosting.
+**Closed-parameter LLMs** are likely the ones most familiar to new users. Examples include **ChatGPT**, **Claude**, and **Gemini**. These models are provided to users via a **Graphical User Interface (GUI)** or an **Application Programming Interface (API)**, so users do not need to worry about hosting the LLM themselves. 
 
-Using the open-parameters LLMs means that user has total control of the model. If needed, user can confine, inspect, manipulate any details of any steps of large language model at their own will. These models can be used locally, so an internet would not be necessary after a model is downloaded, and the text a user provide to a model would be strictly confined to your own PC, which maximize the privacy. This is especially useful if the data are not to be published due to various reasons, ethical or privilege-related. 
+The companies that develop these models host them on their own servers, and users are not allowed to host their own versions. This is because the parameters are closed — meaning they are not publicly accessible. In simple terms, you **cannot download** ChatGPT, Claude, Gemini, or any other closed-parameter model to run it locally.
 
-However, using open-parameters LLMs comes with trade-offs. User need to find their own hosting server or use software library to start the inferring process. This complicates the use of LLM(compared with closed-parameters model). Moreover, if the LLM is hosted locally, there would be high technical specification requirements for the hosting computer. Typically, abundant memory(>8GB) and a video card(graphic card) would be necessary to ensure the smooth use of the smallest open-parameters LLM like Llama 1B version. 
+Moreover, users do not have full control over the model or their data input, since all text must be uploaded through the GUI or API to the hosting company’s servers. While most **End User License Agreements (EULAs)** emphasize privacy protection, your data must at least pass through these companies before the model can generate a response.
+
+---
+
+**Open-parameter LLMs**, by contrast, have their parameters freely available on the internet. These parameters can be **downloaded**, **loaded locally**, fine-tuned, or tweaked (e.g., activation manipulation) for a user’s own purposes. 
+
+While some models can also be found on their respective publication repositories, most of today’s high-performing open-parameter LLMs are hosted on [**Hugging Face**](https://huggingface.co), which is the largest and most well-known platform for AI model sharing.
+
+Using an open-parameter LLM gives the user **total control** of the model. If needed, you can confine, inspect, and manipulate any detail of the model’s operation at any stage. These models can be run entirely locally, meaning that once a model is downloaded, **no internet connection is required**, and all text you provide stays on your own PC. This greatly enhances privacy, which is especially useful when working with data that cannot be published for ethical or confidentiality reasons.
+
+---
+
+However, using open-parameter LLMs comes with **trade-offs**.  
+- **Setup** – Users must find their own hosting server or use a software library to start the inference process.  
+- **Complexity** – This makes open-parameter models more complicated to use compared to closed-parameter models.  
+- **Hardware requirements** – Running an LLM locally requires a powerful computer.  
+
+Typically, you will need **at least 8GB of memory** and a **graphics card (GPU)** to run even the smallest open-parameter models, such as **Llama 1B**. Without sufficient resources, performance will be slow or unstable.
+
 
 ## Ollama Setup
 
-Ollama is an open-source LLM server program that allow you to host LLMs locally at your PC/Laptop. Its installation binary is compiled for on OSX, Windows and Linux so regardless of your operating system, Ollama is available for you.
+Ollama is an open-source LLM server program that allows you to host LLMs locally on your PC or laptop. Installation binaries are available for OSX, Windows, and Linux, so regardless of your operating system, Ollama is available for you.
 
-Ollama can be used in terminal(command line, cmd), via a graphical user interface(GUI) and via an API.
+Ollama can be used through the terminal (command line, cmd), via a graphical user interface (GUI), or through an API.
 
 ### Installation
 
-To install Ollama, please first go to its official website:
+To install Ollama, first visit its official website:
 
-> [https://ollama.com](https://ollama.com),
+> [https://ollama.com](https://ollama.com)
 
-and following the system specific instruction
+and follow the instructions for your specific operating system.
 
 #### Windows
 
-To install Ollama on windows, you have two options:
+You have two options to install Ollama on Windows:
 
-Option 1: go to this page:
+**Option 1:** Go to this page:
 
-> [Download Ollama on Windows](https://ollama.com/download/windows)
+> [Download Ollama on Windows](https://ollama.com/download/Windows)
 
-And click the download button. After the installation program is downloaded, double-click to start the program and follow the instruction there.
+Click the download button. Once the installer is downloaded, double-click it to start and follow the on-screen instructions.
 
-Option 2: press Ctrl + r to start the run interactive window. Input
+**Option 2:** Press **Ctrl + R** to open the *Run* dialog. Type:
 
 > cmd
 
-And click OK.(If you have admin privilege or if you are the admin or if you are the only user of the PC, click OK when you hold Ctrl+Shfit to acquire admin privilege for following process.)
+and click **OK**.  
+(If you have administrative privileges, press **Ctrl + Shift + Enter** to run as administrator.)
 
-This would start a windows command line for you.
+This will open a Windows command line.
 
-In the command line window, input:
+In the command line, type:
 
 > winget install ollama
 
-Press Enter, and the installation should start. Please note, you may be prompted for EULA(End User License Agreement), if so, type y(es) to proceed.
+Press **Enter** to start the installation.  
+You may be prompted to accept the End User License Agreement (EULA); type **y** (yes) to proceed.
 
 #### Linux
 
-To install the Ollama on Linux, press Ctrl+Alt+T to start terminal. Then in terminal, do:
+To install Ollama on Linux, press **Ctrl + Alt + T** to open a terminal. Then run:
 
 > curl -fsSL https://ollama.com/install.sh | sh
 
-This should automatically start downloading and installing Ollama. However, if you are prompted for admin privilege, please do the following instead:
+This will automatically download and install Ollama.  
+If prompted for administrator privileges, use the following instead:
 
 > sudo curl -fsSL https://ollama.com/install.sh | sh
 
-Note: if you are using this command, you may be prompted for your admin password.
+Note: You may be asked to enter your admin password when using `sudo`.
 
 #### OSX
 
-To install Ollama on OSX, go to
+To install Ollama on OSX, go to:
 
 > [Download Ollama on macOS](https://ollama.com/download/mac)
 
-and follow the instruction.
+and follow the instructions provided.
 
-### Ollama Command Line Interface(CLI)
+---
 
-After you install Ollama successfully, you will be able to use Ollama in various way, among which the command line interface(CLI) is the most fundamental one.
+### Ollama Command Line Interface (CLI)
 
-The Ollama CLI would let you interact with Ollama, check its status, download and run models, and manage the models.
+Once installed successfully, you can use Ollama in several ways, with the **command line interface (CLI)** being the most fundamental.
 
-To use the Ollama CLI, you need a command line(cmd in windows), or terminal(in OSX and Linux).
+The CLI lets you interact with Ollama, check its status, download and run models, and manage your local models.
 
-To start a command line in windows, simply press Ctrl + r, input
+To open a command line or terminal:
 
-> cmd
+- **Windows:** Press **Ctrl + R**, type `cmd`, and click **OK**.  
+- **Linux:** Press **Ctrl + Alt + T**.  
+- **OSX:** Launch the **Terminal** application from Launchpad or Spotlight.
 
-And then click run.
-
-To start a terminal in Linux, press Ctrl+Alt+T .
-
-To start a terminal in OSX, run the application called "terminal" in your launchpad or app finder.
-
-After you start cmd or terminal you may use ollama by calling
+Once open, type:
 
 > ollama
 
-And this should return a brief document on what sub-command you can use under Ollama. They would look like:
+You should see a brief help message listing available sub-commands, for example:
 
-> Usage:
->  ollama [flags]
->  ollama [command]
-> 
-> Available Commands:
->  serve Start ollama
->  create Create a model from a Modelfile
->  show Show information for a model
->  run Run a model
->  stop Stop a running model
->  pull Pull a model from a registry
->  push Push a model to a registry
->  list List models
->  ps List running models
->  cp Copy a model
->  rm Remove a model
->  help Help about any command
-> 
-> Flags:
->  -h, --help help for ollama
->  -v, --version Show version information
-> 
+> Usage:  
+>  ollama [flags]  
+>  ollama [command]  
+>  
+> Available Commands:  
+>  serve Start Ollama  
+>  create Create a model from a Modelfile  
+>  show Show information for a model  
+>  run Run a model  
+>  stop Stop a running model  
+>  pull Pull a model from a registry  
+>  push Push a model to a registry  
+>  list List models  
+>  ps List running models  
+>  cp Copy a model  
+>  rm Remove a model  
+>  help Help about any command  
+>  
+> Flags:  
+>  -h, --help Help for Ollama  
+>  -v, --version Show version information  
+>  
 > Use "ollama [command] --help" for more information about a command.
 
-If you don't find this as the output, go back and double check your installation of ollama, and if this problem persists, please drop me an email.
+If you don’t see this output, double-check your installation. If the issue persists, seek assistance.
 
-In the following part I will walk you through the basic usages of ollama. It is recommended that you go through this with me and try this command when you learn.
+The following sections walk you through basic Ollama usage. It’s recommended to try each command as you read.
+
+---
 
 #### Start Ollama
 
-Typically, Ollama should start together with your OS, or right after the installation. If you find Ollama is not started, you may use the following command to start:
+Ollama usually starts automatically with your operating system or right after installation.  
+If it is not running, start it manually with:
 
 > ollama serve
 
-Note: Only one ollama instance is allowed at a time. If you see the following outputs:
+**Note:** Only one Ollama instance can run at a time.  
+If you see this error:
 
 > Error: listen tcp 127.0.0.1:11434: bind: address already in use
 
-typically the ollama has already started. (if you are an advanced user, it can also be the case that the port 11434 is used by another program, but this should be rare because this is not an usual port that is used by a program).
+it typically means Ollama is already running. (In rare cases, another program might be using port `11434`.)
 
-#### Download a model
+---
 
-To use a model, you need to first download it. To do so, first, please check here for a full list of model:
+#### Download a Model
+
+To use a model, you must download it first.  
+Check here for the full list of available models:
 
 > [Ollama Search](https://ollama.com/search)
 
-If you are using a laptop, a home PC with low tech specs, it is highly recommended that you choose a model with low parameter size, such as 1b, or 3b, but if you are working on a workstation or a server(e.g. at bluebear), you can use models larger than 3b.
+- For laptops or low-spec home PCs, choose a smaller model such as **1B** or **3B**.  
+- For workstations or servers (e.g., BlueBEAR), you can use larger models.
 
-And after you select the model you would like to use, run
+Once you’ve selected a model, run:
 
 > ollama pull [MODEL_NAME]
 
-to download the model.
-
-In the PGTip session as demonstration, the model llama3.2:1b is planned to be used. To download it, run
+For example, to download the model `llama3.2:1b`, run:
 
 > ollama pull llama3.2:1b
 
-#### Check downloaded model
+---
 
-To check downloaded models, use the following command:
+#### Check Downloaded Models
+
+To list all downloaded models, use:
 
 > ollama list
 
-You may check a list of models and their information.
+This will display each model along with relevant information.
 
-#### Run a model
+---
 
-To run a model that has already been downloaded, run:
+#### Run a Model
+
+To run a downloaded model, type:
 
 > ollama run [MODEL_NAME]
 
-For example
+For example:
 
 > ollama run llama3.2:1b
 
-The model should be running soon. After you see
+When the model is ready, you’ll see:
 
 > > > > send a message ( /? for help)
 
-You can start typing your prompt to the model. Any prompt you put here would be sent to the model for inference as a user message. And the model would response in the same command line window or terminal window.
+You can now type prompts directly into the terminal.  
+The model will generate responses in the same window.
 
-To exit, type the following as chat
+To exit the chat session, type:
 
 > /bye
 
-But please note that /bye DOES NOT stop the model from running. It only exit the dialogue with model and allow you to use your command line window/terminal again. To stop your model you need to check the following.
+**Important:**  
+`/bye` **does not stop the model**, it only closes the dialogue.  
+To fully stop the model, see below.
 
-#### Stop a model
+---
 
-To stop a model, please run
+#### Stop a Model
+
+To stop a running model, use:
 
 > ollama stop [MODEL_NAME]
 
-And the model should be stopped.
-
-For example
+Example:
 
 > ollama stop llama3.2:1b
 
-#### Check model that is running
+---
 
-Sometime you would forget the name of the model that is in running, or sometime you would be not aware of a model that is initiated by another program, but for whatever reason, if you need to check what model is still running, please run:
+#### Check Running Models
+
+If you forget which model is running, or suspect a model was started by another program, type:
 
 > ollama ps
 
-This should return you with a list of model that is currently running.
+This will show a list of currently active models.
+
+---
 
 ## Ollama with GUI
 
-Beyond the CLI, a more elegant and efficient way to use Ollama is via a graphical user interface(GUI). A GUI would allow you to interact with model hosted by Ollama in the same(or similar style) of ChatGPT.
+Beyond the CLI, a more user-friendly way to use Ollama is through a **graphical user interface (GUI)**.  
+A GUI allows you to interact with your local model in a style similar to ChatGPT.
 
-To use Ollama with GUI, please ensure that a model is running. Here, I would use llama3.2:1b as an example, if you need to use another model, please replace llama3.2:1b with the name of the model you selected.
-
-To run the model:
+Before using the GUI, make sure a model is running.  
+For example, start the `llama3.2:1b` model with:
 
 > ollama run llama3.2:1b
 
-After the model is started and running, you may go to your web browser and install the related extension.
+Next, open your web browser and install the **Page Assist** extension.
 
-In either Firefox, or Chrome, there is an extension named "Page Assist".
+- **Firefox:** [Page Assist for Firefox](https://addons.mozilla.org/en-US/firefox/addon/page-assist/)  
+- **Chrome:** [Page Assist for Chrome](https://chromewebstore.google.com/detail/page-assist-a-web-ui-for/jfgfiigpkhlkbnfnbobbkinehhfdhndo)  
+  (Or search for "Page Assist" in the Chrome Web Store.)
 
-Firefox Page Assist link: https://addons.mozilla.org/en-US/firefox/addon/page-assist/
+After installing, you’ll see Page Assist in your browser’s extensions list.  
+*Tip:* Pin it for easy access.
 
-Chrome Page Assist link: https://chromewebstore.google.com/detail/page-assist-a-web-ui-for/jfgfiigpkhlkbnfnbobbkinehhfdhndo (or search Page Assist this in chrome web store)
+Click the extension icon to launch it. It will automatically connect to your local Ollama instance and the running model.
 
-After you installed the extension, you should see the page assist in your extension list(pin it is recommended if you would like to use it repeatedly). Click on the extension icon to start it, and it would automatically connect to the local ollama and the model running in it.
+---
 
-Now, you are equipped yourself with a local LLM that is owned 100% by yourself. It is hosted in a PC you have full control which means that all data you sent towards it remains in your full control, and this means that the process is more transparent, free of censorship applied outside the model, and also more reliable.
+Now you have a fully local LLM, completely under your control.  
+Since it runs on your own PC, all data stays private, free from outside censorship, and with full transparency.
+
