@@ -1,0 +1,147 @@
+Coding Manual for the Identification of Metaphor in Film Reviews
+
+The purpose of this manual is to present the procedures used to identity metaphor in a corpus of film reviews and to classify those metaphors as ‘creatively used’ or not. A metaphor is here defined as follows:
+A string of one or more words that describes one entity in terms of another unrelated entity by means of comparison.
+The italicised text span below is an example of a metaphor.
+It's pretty much a sunken ship of a movie 
+Here the words ‘sunken ship’ describe the movie as one that is so bad that it is never going to be rescued. 
+This manual is in two parts. 
+In Part 1 we present the rules that we followed for identifying a stretch of text as ‘metaphor’.
+In Part 2 with present the rules that we devised and then followed when identifying a stretch of text as ‘creatively-used metaphor’.
+It should be noted that we do not italicise each metaphor in the examples that follow, only those that relate to the point under consideration.
+
+PART 1. Procedure for identifying metaphor
+Our procedure draws on two previously attested approaches: Cameron’s (2003) vehicle identification procedure and the PRAGGLEJAZ (2007) metaphor identification procedure (MIP), combining elements of each. 
+This allows the analyst to focus on metaphor at the level of the phrase (which is a more natural way of looking at metaphor), whilst ensuring that phenomenon being identified is definitely metaphor and not a related trope, such as metonymy or hyperbole. 
+The procedure is as follows:
+(1) Begin by reading the entire text to establish a general understanding of the meaning. 
+(2) Identify meaning units following Cameron’s (2003) vehicle identification procedure. These can be at the level of the word, phrase, or longer stretches of text. 
+(3) For each meaning unit, establish its meaning in context (i.e. its contextual meaning, taking into account both the co-text, and the genre of the text). 
+(4) Determine whether or not the meaning unit has a more basic contemporary meaning in other contexts than the one in the given context. 
+For our purposes, basic meanings tend to be
+    a. More concrete (what they evoke is easier to imagine, see, hear, feel, smell, and/or taste);
+    b. Related to bodily action;
+    c. More precise (as opposed to vague);
+NOTES 
+    • Include metaphors that cross word-class boundaries, as this is often a central characteristic of metaphor. 
+        ◦ For example, staggering, which is an adjective in its metaphorical sense but a verb in its literal sense, would be coded as metaphor because its meaning can be understood in comparison to the verb. 
+    • Do not break down individual words into their metaphorical components, e.g. outcasts, pinpoint, skyrocket are not coded as metaphor. 
+    • Words ending in ‘ish’ e.g. devilish, boyish are not coded as metaphor
+    • When considering metaphors that only include one word, only include open-class words; exclude closed-class items and de-lexicalised verbs (make, do, put, take, give, have, and get). 
+    • Note that basic meanings are not necessarily the most frequent meanings of a particular word or phrase.
+    • Do not automatically assume that historically older meanings are more basic. 
+    • Do not include words that have a historical metaphorical component (e.g. ‘comprehend’ and ‘pedigree’)
+(5) If the meaning unit has a more basic current–contemporary meaning in other contexts than the given context, decide whether the contextual meaning contrasts with the basic meaning but can be understood in comparison with it. 
+(6) If the meaning unit meets the conditions in (5), mark it as metaphorical.
+
+Metaphors can operate at the level of the single word, or in some cases can extend beyond the word. 
+This is possible in cases where:
+i) The expression is a conventional idiom or is derived from one, such as ‘have your cake and eat it’ or ‘not an original or inventive bone in its body’. In cases such as these the whole idiom is coded as a metaphor. 
+ii) There are hyphenated words which form a single lexical unit, e.g. ‘tough-as-nails’ Salander.
+iii) There is an adjectival entailment of a metaphorically-used noun (or an adverbial entailment of a metaphorically-used verb) that that is internally semantically coherent with the literal sense of the noun or verb
+It’s pretty much a sunken ship of a movie
+He gets several bee stings
+Ships can sink in the ‘literal’ world and ‘sunken’ is serving as a premodifier of ship in this sentence.
+Stings can be received from bees in the ‘literal’ world and ‘bees’ is serving as a premodifier of stings in this sentence.
+(iv) There is a verb that is semantically coherent with the literal sense of the noun.
+In the following example, ‘screws tighten’ would count as one metaphor whereas ‘tensions mount’ would count as two because literal tensions do not literally ‘mount’ in the physical world, but literal screws do literally ‘tighten’. 
+as the [screws tighten], and the [tensions] [mount]
+v) There is an adjectival entailment of a metaphorically-used noun (or an adverbial entailment of a metaphorically-used verb) that is semantically coherent with the metaphorical sense of the noun or verb
+which is in contrast to the negative baggage that the reviewers were likely to have
+‘Baggage’ in its metaphorical sense here can be positive or negative but literal baggage is not conventionally described in these terms. 
+vi) The whole grammatical phrase is the metaphor
+In the following example there is a single metaphorical action that operates as a single metaphor:
+you can't help going in with the baggage of glowing reviews
+vii) A single metaphorical scenario is developed and elaborated upon across a stretch of text
+The following example constitutes a single metaphor as a single scenario is elaborated upon. 
+
+Director Steven Spielberg wastes no time, taking us into the water on a midnight swim with a beautiful girl that turns deadly. Right away he lets us know how vulnerable we all are floating in the ocean.
+
+viii) There is a direct metaphor complete with a signalling device.
+
+In cases such as these, the whole phrase is marked as metaphor, as in the following example: 
+As giddy as a school kid
+
+
+NB: Identifying the number of metaphors in a stretch of text
+In some cases, a stretch of text contains multiple metaphorically-used words which are coherent with one overarching metaphorical mapping. In such cases, the phrases are marked as a single metaphor:
+perking up the movie like an injection of anti-depressant. 
+the real depth of his character is only skin deep 
+If there are metaphorically-used items from more than one overarching metaphorical mapping, these are marked as separate metaphors:
+the actors, and their relationship together, present the one-two punch that prevents double jeopardy from derailing itself entirely
+Where the ideas are incoherent metaphorically, mark them separately:
+[centers] [highly] [around]
+
+
+PART 2. Rules for identifying metaphor as a creatively-used metaphor
+Code metaphors as creatively-used when one or more of the following criteria are met:
+1. When a metaphor draws on a completely new metaphorical mapping, drawing together previously unrelated elements: 
+These guys know how to graft a comic book onto celluloid
+2. When a conventional metaphorical mapping is used in a new way, playing with the meaning or the form or both, in one or more of the following ways:
+
+a) Altering the valence of a metaphor (positive and negative)
+This occurs when a metaphor conventionally used positively is used negatively, and vice versa.
+Actually, Robin Williams does a lot of shouting. He shouts a lot about helping people, and a lot of people cry because they are moved by his words. I won’t tell you that you can’t be moved by his words, because I too, was moved by his words. I was moved in such a profoundly negative way that I was reminded of how cheap and phony a cinematic experience can be.
+Usually when we are moved by something, it has positive connotations, but here the reviewer is evaluating Robin Williams in an overtly negative way by creatively imbuing it with negative connotations. 
+
+You can’t help going in with the baggage of glowing reviews
+Usually ‘baggage’ has negative connotations but here it is used in a positive sense.
+
+b) Introducing a new collocation
+This occurs in cases where conventional collocational patterns involving metaphor are flouted:
+
+steal clout from (one might ‘have’ clout, but one would rarely ‘steal’ it)
+delicate power (near oxymoron)
+Christina Ricci, hot off her shoulda-been-nominated turn in "The Opposite of Sex" (creative extension of ‘hot off the press’) 
+
+c) Introducing more detail into a conventional mapping, or extending it in a novel way (often evoking hyperbole or litotes)
+Kick your arse from this end of the theatre to the next (while ‘to kick one’s arse’ is a conventional metaphorical phrase, the added detail that it is ‘from this end of the theatre to the next’ means that this should be considered an example of creatively-used metaphor) 
+James Cameron took the big-budget action film with aliens, which featured multiple aliens doing basically the same thing, although on a much-larger scale, and boy, did he take that route! I'd say at about 165 mph or so . . .
+The English language versions of most argento movies usually suffer trimming, and not just for the violence - ‘Deep Red’ and ‘Phenomena’, for example, have been appallingly hacked about
+This can be done via a simile that lends hyperbole:
+All the other story tangents are as frazzled as a cokehead trying to solve a Rubick's cube
+
+d) Altering the tense or part of speech of a conventional metaphor
+A sunken ship of a movie (it is more conventional to metaphorically refer to a ‘sinking ship’, rather than a ‘sunken’ one) 
+
+e) Using a metaphor in a new context where it is not usually used or to talk about something that it’s not usually used to talk about
+August and September are a wasteland when it comes to children's films, and October is a dumping ground for munchkin movies
+
+an "entity" from outer space, who likes to inhabit human bodies, use them up until they are completely worn out, and then switch over to the next available receptacle 
+the movie is quite user-friendly (usually used about tangible objects such as tools or technological devices)
+There is not an original or inventive bone in its [the film’s] body (this expression is usually used about a person, not a film)
+ 
+A very popular actress with a $15 million asking price for movies (normally ‘asking price’ is used for objects, not people)
+
+f) Twice true metaphor
+Twice true metaphors are metaphors which work on two levels; they have a literal meaning that is relevant to the context of the film they are being used to describe.
+Once ‘Jaws’ has attacked, it never relinquishes its grip (Here, ‘it’ refers to both the film and the shark in it). 
+If this is ‘200 Cigarettes’, then get me 200 nicotine patches
+A sunken ship of a movie (This expression refers metaphorically to the quality and literally to the subject matter of the film) 
+
+g) Combines with metonymy in a novel way
+It's typical of unimaginative cinema to wrap things up with a bullet (Here, the ‘bullet’ refers metonymically to the act of killing someone off at the end of the film)
+Those who enjoy putting away their brains every now and again (Here, ‘brains’ is used metonymically to refer to in-depth thought)
+
+h) Combining two conventional metaphors in a novel way
+This fast-paced, urban equivalent of ‘The Thing’ (8/10), [checks in] [on all cylinders]
+‘Checks in’ and ‘all cylinders’ are individually conventional but together they are creative; one of these metaphors should therefore be coded as creative, reflecting that it is the combination of both that becomes creative without artificially inflating creative metaphor counts.
+A big helping of whoop-ass behaviour
+As above, ‘big helping’ and ‘whoop-ass’ are individually conventional but putting them together is creative, conceptualising ‘whoop-ass behaviour’ as something that may be served up at a meal. Again, one metaphor should be coded as creative to avoid artificially inflating creative metaphor counts.
+
+i) Using strong and unlikely or unexpected personification
+The decor possibilities are endless - disco balls had yet to migrate into the dark corners of the attic, big hair was worth its weight in Aquanet, and the louder the fashion, the better the look.
+The picture moves along very slowly also … it almost threatens to drop dead.
+This film will not only latch onto you, but it proves that it does not want to release you until it has sunk its claws completely into you
+A [plot twist] [in search of] a movie
+ Here, ‘plot twist’ is marked as conventional metaphor, but ‘in search of’ is marked as creative metaphor to reflect the unexpected personification involved.
+
+j) Introducing dramatic contrast
+A combination that mostly splutters when it should crackle
+The great master shows his hand there as the tensions build as rapidly in the second part as they lay fallow in the first
+Most notably the head ballet teacher played by Alida Valli in another one of those delicious sour-old-matriarch-from-hell roles she does so well.
+The grand finale’s special effects went right into the toilet at that point. (Here, the metaphorical expression ‘went right into the toilet’ contrasts with the idea of a ‘grand finale’)
+
+k) Using recontextualisation and appropriation
+A mixture of the good, the bad and the gaudy (This expression makes reference to the film ‘The Good, the Bad and the Ugly’, but it is not taken from a review of that film)
+‘Something is fishy in the state of Universal’ (Here, the whole phrase is coded as creative metaphor, as the creativity comes from the appropriation of a well-known phrase, even though the only metaphor here is ‘fishy’)
