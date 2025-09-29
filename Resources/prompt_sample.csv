@@ -5,118 +5,118 @@ pid,name,cid,role,content
 • Reproduce the rest of the text exactly as written.
 • Do not include any explanation, commentary, or extra content in this message."
 0,Zero shot,1,user,Can you please identify and tag the metaphors in the following text?[#TEST_TEXT]
-1,"No definition, 4 shots, Original conventional vs creative ratio",0,system,"You are a linguistic expert trained in metaphor identification. When the user provides a text, follow this protocol:
+1,"Few shot, 4 shots, original ratio",0,system,"You are a linguistic expert trained in metaphor identification. When the user provides a text, follow this protocol:
 • Identify all metaphorical expressions
 • Wrap each one in <Metaphor> and </Metaphor> tags
 • Reproduce the rest of the text exactly as written.
 • Do not include any explanation, commentary, or extra content in this message."
-1,"No definition, 4 shots, Original conventional vs creative ratio",1,user,Can you please identify and tag the metaphors in the following text? the rest of the characters are the dullest people imaginable.
-1,"No definition, 4 shots, Original conventional vs creative ratio",2,assistant,the rest of the characters are the <Metaphor> dullest </Metaphor> people imaginable .
-1,"No definition, 4 shots, Original conventional vs creative ratio",3,user,"Can you please identify and tag the metaphors in the following text? 
+1,"Few shot, 4 shots, original ratio",1,user,Can you please identify and tag the metaphors in the following text? the rest of the characters are the dullest people imaginable.
+1,"Few shot, 4 shots, original ratio",2,assistant,the rest of the characters are the <Metaphor> dullest </Metaphor> people imaginable .
+1,"Few shot, 4 shots, original ratio",3,user,"Can you please identify and tag the metaphors in the following text? 
 the keen wisdom of an elderly bank robber , the naive ambitions of a sexy hospital nurse , and a partnership that blossoms between the two are the fine components that make up a modest , little caper adventure entitled `where the money is . '"
-1,"No definition, 4 shots, Original conventional vs creative ratio",4,assistant,"the <Metaphor> keen </Metaphor> wisdom of an elderly bank robber , the naive ambitions of a sexy hospital nurse , and a partnership that <Metaphor> blossoms </Metaphor> between the two are the fine <Metaphor> components </Metaphor> that make up a <Metaphor> modest </Metaphor> , <Metaphor> little </Metaphor> <Metaphor> caper </Metaphor> adventure entitled `where the money is . '"
-1,"No definition, 4 shots, Original conventional vs creative ratio",5,user,"Can you please identify and tag the metaphors in the following text?
+1,"Few shot, 4 shots, original ratio",4,assistant,"the <Metaphor> keen </Metaphor> wisdom of an elderly bank robber , the naive ambitions of a sexy hospital nurse , and a partnership that <Metaphor> blossoms </Metaphor> between the two are the fine <Metaphor> components </Metaphor> that make up a <Metaphor> modest </Metaphor> , <Metaphor> little </Metaphor> <Metaphor> caper </Metaphor> adventure entitled `where the money is . '"
+1,"Few shot, 4 shots, original ratio",5,user,"Can you please identify and tag the metaphors in the following text?
 and for those viewers out there who would only lay down money for this movie in hopes of seeing pam topless , hate to burst your bubble , but there are no full-fledged nude scenes in barb wire ."
-1,"No definition, 4 shots, Original conventional vs creative ratio",6,assistant,"and for those viewers out there who would only lay down money for this movie in hopes of seeing pam topless , hate to <Metaphor> burst your bubble </Metaphor> , but there are no <Metaphor> full-fledged </Metaphor> nude scenes in barb wire ."
-1,"No definition, 4 shots, Original conventional vs creative ratio",7,user,"Can you please identify and tag the metaphors in the following text?
+1,"Few shot, 4 shots, original ratio",6,assistant,"and for those viewers out there who would only lay down money for this movie in hopes of seeing pam topless , hate to <Metaphor> burst your bubble </Metaphor> , but there are no <Metaphor> full-fledged </Metaphor> nude scenes in barb wire ."
+1,"Few shot, 4 shots, original ratio",7,user,"Can you please identify and tag the metaphors in the following text?
 while emotionally unconvincing , the actress is tremendously fun in her juvenile role , perking up the movie like an injection of anti-depressant ."
-1,"No definition, 4 shots, Original conventional vs creative ratio",8,assistant,"while emotionally unconvincing , the actress is tremendously fun in her juvenile role , <Metaphor> perking up the movie like an injection of anti-depressant </Metaphor> ."
-1,"No definition, 4 shots, Original conventional vs creative ratio",9,user,"Question: Can you please identify and tag the metaphors in the following text?
+1,"Few shot, 4 shots, original ratio",8,assistant,"while emotionally unconvincing , the actress is tremendously fun in her juvenile role , <Metaphor> perking up the movie like an injection of anti-depressant </Metaphor> ."
+1,"Few shot, 4 shots, original ratio",9,user,"Question: Can you please identify and tag the metaphors in the following text?
 [#TEST_TEXT]"
-2,"No definition, 4 shots, Even conventional vs creative ratio",0,system,"You are a linguistic expert trained in metaphor identification. When the user provides a text, follow this protocol:
+2,"Few shot, 4 shots, even ratio",0,system,"You are a linguistic expert trained in metaphor identification. When the user provides a text, follow this protocol:
 • Identify all metaphorical expressions
 • Wrap each one in <Metaphor> and </Metaphor> tags.
 • Reproduce the rest of the text exactly as written.
 • Do not include any explanation, commentary, or extra content in this message."
-2,"No definition, 4 shots, Even conventional vs creative ratio",1,user,"Can you please identify and tag the metaphors in the following text? 
+2,"Few shot, 4 shots, even ratio",1,user,"Can you please identify and tag the metaphors in the following text? 
 the rest of the characters are the dullest people imaginable ."
-2,"No definition, 4 shots, Even conventional vs creative ratio",2,assistant,the rest of the characters are the <Metaphor> dullest </Metaphor> people imaginable .
-2,"No definition, 4 shots, Even conventional vs creative ratio",3,user,"Can you please identify and tag the metaphors in the following text? 
+2,"Few shot, 4 shots, even ratio",2,assistant,the rest of the characters are the <Metaphor> dullest </Metaphor> people imaginable .
+2,"Few shot, 4 shots, even ratio",3,user,"Can you please identify and tag the metaphors in the following text? 
 while emotionally unconvincing , the actress is tremendously fun in her juvenile role , perking up the movie like an injection of anti-depressant ."
-2,"No definition, 4 shots, Even conventional vs creative ratio",4,assistant,"while emotionally unconvincing , the actress is tremendously fun in her juvenile role , <Metaphor> perking up the movie like an injection of anti-depressant </Metaphor> ."
-2,"No definition, 4 shots, Even conventional vs creative ratio",5,user,"Can you please identify and tag the metaphors in the following text? 
+2,"Few shot, 4 shots, even ratio",4,assistant,"while emotionally unconvincing , the actress is tremendously fun in her juvenile role , <Metaphor> perking up the movie like an injection of anti-depressant </Metaphor> ."
+2,"Few shot, 4 shots, even ratio",5,user,"Can you please identify and tag the metaphors in the following text? 
 court tv junkies will probably pick up the many differences , some subtle and others not , between the american and the british judicial systems ."
-2,"No definition, 4 shots, Even conventional vs creative ratio",6,assistant,"court tv <Metaphor> junkies </Metaphor> will probably <Metaphor> pick up </Metaphor> the many differences , some subtle and others not , between the american and the british judicial systems ."
-2,"No definition, 4 shots, Even conventional vs creative ratio",7,user,"Can you please identify and tag the metaphors in the following text? 
+2,"Few shot, 4 shots, even ratio",6,assistant,"court tv <Metaphor> junkies </Metaphor> will probably <Metaphor> pick up </Metaphor> the many differences , some subtle and others not , between the american and the british judicial systems ."
+2,"Few shot, 4 shots, even ratio",7,user,"Can you please identify and tag the metaphors in the following text? 
 the film , which wanders all over the place without getting anywhere , is remarkably * on * -kilter and , with perhaps the single exception of the always-likable modine ( who's not afraid to stand around in a very unattractive bathing suit surrounded by hunks ) , the entire cast is vague and uninteresting ."
-2,"No definition, 4 shots, Even conventional vs creative ratio",8,assistant,"the film , which <Metaphor> wanders all over the place without getting anywhere </Metaphor> , is remarkably * <Metaphor> on * -kilter </Metaphor> and , with perhaps the single exception of the always-likable modine ( who's not afraid to stand around in a very unattractive bathing suit surrounded by <Metaphor> hunks </Metaphor> ) , the entire cast is <Metaphor> vague </Metaphor> and uninteresting ."
-2,"No definition, 4 shots, Even conventional vs creative ratio",9,user,"Can you please identify and tag the metaphors in the following text?
+2,"Few shot, 4 shots, even ratio",8,assistant,"the film , which <Metaphor> wanders all over the place without getting anywhere </Metaphor> , is remarkably * <Metaphor> on * -kilter </Metaphor> and , with perhaps the single exception of the always-likable modine ( who's not afraid to stand around in a very unattractive bathing suit surrounded by <Metaphor> hunks </Metaphor> ) , the entire cast is <Metaphor> vague </Metaphor> and uninteresting ."
+2,"Few shot, 4 shots, even ratio",9,user,"Can you please identify and tag the metaphors in the following text?
 [#TEST_TEXT]"
-3,"No definition, 8 shots, Original conventional vs creative ratio",0,system,"You are a linguistic expert trained in metaphor identification. When the user provides a text, follow this protocol:
+3,"Few shot, 8 shots, original ratio",0,system,"You are a linguistic expert trained in metaphor identification. When the user provides a text, follow this protocol:
 • Identify all metaphorical expressions
 • Wrap each one in <Metaphor> and </Metaphor> tags.
 • Reproduce the rest of the text exactly as written.
 • Do not include any explanation, commentary, or extra content in this message."
-3,"No definition, 8 shots, Original conventional vs creative ratio",1,user,"Can you please identify and tag the metaphors in the following text?
+3,"Few shot, 8 shots, original ratio",1,user,"Can you please identify and tag the metaphors in the following text?
 the rest of the characters are the dullest people imaginable ."
-3,"No definition, 8 shots, Original conventional vs creative ratio",2,assistant,the rest of the characters are the <Metaphor> dullest </Metaphor> people imaginable .
-3,"No definition, 8 shots, Original conventional vs creative ratio",3,user,"Can you please identify and tag the metaphors in the following text?
+3,"Few shot, 8 shots, original ratio",2,assistant,the rest of the characters are the <Metaphor> dullest </Metaphor> people imaginable .
+3,"Few shot, 8 shots, original ratio",3,user,"Can you please identify and tag the metaphors in the following text?
 the keen wisdom of an elderly bank robber , the naive ambitions of a sexy hospital nurse , and a partnership that blossoms between the two are the fine components that make up a modest , little caper adventure entitled `where the money is . '"
-3,"No definition, 8 shots, Original conventional vs creative ratio",4,assistant,"the <Metaphor> keen </Metaphor> wisdom of an elderly bank robber , the naive ambitions of a sexy hospital nurse , and a partnership that <Metaphor> blossoms </Metaphor> between the two are the fine <Metaphor> components </Metaphor> that make up a <Metaphor> modest </Metaphor> , <Metaphor> little </Metaphor> <Metaphor> caper </Metaphor> adventure entitled `where the money is . '"
-3,"No definition, 8 shots, Original conventional vs creative ratio",5,user,"Can you please identify and tag the metaphors in the following text? 
+3,"Few shot, 8 shots, original ratio",4,assistant,"the <Metaphor> keen </Metaphor> wisdom of an elderly bank robber , the naive ambitions of a sexy hospital nurse , and a partnership that <Metaphor> blossoms </Metaphor> between the two are the fine <Metaphor> components </Metaphor> that make up a <Metaphor> modest </Metaphor> , <Metaphor> little </Metaphor> <Metaphor> caper </Metaphor> adventure entitled `where the money is . '"
+3,"Few shot, 8 shots, original ratio",5,user,"Can you please identify and tag the metaphors in the following text? 
 and for those viewers out there who would only lay down money for this movie in hopes of seeing pam topless , hate to burst your bubble , but there are no full-fledged nude scenes in barb wire ."
-3,"No definition, 8 shots, Original conventional vs creative ratio",6,assistant,"and for those viewers out there who would only lay down money for this movie in hopes of seeing pam topless , hate to <Metaphor> burst your bubble </Metaphor> , but there are no <Metaphor> full-fledged </Metaphor> nude scenes in barb wire ."
-3,"No definition, 8 shots, Original conventional vs creative ratio",7,user,"Can you please identify and tag the metaphors in the following text? 
+3,"Few shot, 8 shots, original ratio",6,assistant,"and for those viewers out there who would only lay down money for this movie in hopes of seeing pam topless , hate to <Metaphor> burst your bubble </Metaphor> , but there are no <Metaphor> full-fledged </Metaphor> nude scenes in barb wire ."
+3,"Few shot, 8 shots, original ratio",7,user,"Can you please identify and tag the metaphors in the following text? 
 director anthony waller , who displayed a confident , edgy style in mute witness , stumbles with this material , never being able to make the comedy and horror elements gel ."
-3,"No definition, 8 shots, Original conventional vs creative ratio",8,assistant,"director anthony waller , who displayed a confident , <Metaphor> edgy </Metaphor> style in mute witness , <Metaphor> stumbles </Metaphor> with this <Metaphor> material </Metaphor> , never being able to make the comedy and horror <Metaphor> elements </Metaphor> <Metaphor> gel </Metaphor> ."
-3,"No definition, 8 shots, Original conventional vs creative ratio",9,user,"Can you please identify and tag the metaphors in the following text?
+3,"Few shot, 8 shots, original ratio",8,assistant,"director anthony waller , who displayed a confident , <Metaphor> edgy </Metaphor> style in mute witness , <Metaphor> stumbles </Metaphor> with this <Metaphor> material </Metaphor> , never being able to make the comedy and horror <Metaphor> elements </Metaphor> <Metaphor> gel </Metaphor> ."
+3,"Few shot, 8 shots, original ratio",9,user,"Can you please identify and tag the metaphors in the following text?
 we also see that the black pimps have a number of white girls in their stable and we see how they treat them like dirt , as the film implies that this could be payback for the days of slavery , of master and slave relations ."
-3,"No definition, 8 shots, Original conventional vs creative ratio",10,assistant,"we also see that the black pimps have a number of white girls in their <Metaphor> stable </Metaphor> and we see how they treat them <Metaphor> like dirt </Metaphor> , as the film implies that this could be <Metaphor> payback </Metaphor>for the days of slavery , of master and slave relations ."
-3,"No definition, 8 shots, Original conventional vs creative ratio",11,user,"Can you please identify and tag the metaphors in the following text? 
+3,"Few shot, 8 shots, original ratio",10,assistant,"we also see that the black pimps have a number of white girls in their <Metaphor> stable </Metaphor> and we see how they treat them <Metaphor> like dirt </Metaphor> , as the film implies that this could be <Metaphor> payback </Metaphor>for the days of slavery , of master and slave relations ."
+3,"Few shot, 8 shots, original ratio",11,user,"Can you please identify and tag the metaphors in the following text? 
 have you ever seen a movie that you really enjoyed , then when you look back , you realize there was something missing ?"
-3,"No definition, 8 shots, Original conventional vs creative ratio",12,assistant,"have you ever seen a movie that you really enjoyed , then when you <Metaphor> look back </Metaphor> , you realize there was something missing ?"
-3,"No definition, 8 shots, Original conventional vs creative ratio",13,user,"Can you please identify and tag the metaphors in the following text? 
+3,"Few shot, 8 shots, original ratio",12,assistant,"have you ever seen a movie that you really enjoyed , then when you <Metaphor> look back </Metaphor> , you realize there was something missing ?"
+3,"Few shot, 8 shots, original ratio",13,user,"Can you please identify and tag the metaphors in the following text? 
 while emotionally unconvincing , the actress is tremendously fun in her juvenile role , perking up the movie like an injection of anti-depressant ."
-3,"No definition, 8 shots, Original conventional vs creative ratio",14,assistant,"while emotionally unconvincing , the actress is tremendously fun in her juvenile role , <Metaphor> perking up the movie like an injection of anti-depressant </Metaphor> ."
-3,"No definition, 8 shots, Original conventional vs creative ratio",15,user,"Can you please identify and tag the metaphors in the following text? 
+3,"Few shot, 8 shots, original ratio",14,assistant,"while emotionally unconvincing , the actress is tremendously fun in her juvenile role , <Metaphor> perking up the movie like an injection of anti-depressant </Metaphor> ."
+3,"Few shot, 8 shots, original ratio",15,user,"Can you please identify and tag the metaphors in the following text? 
 total recall is a typical sci-fi film wrapped around an intresting ( if far fetched ) plot "
-3,"No definition, 8 shots, Original conventional vs creative ratio",16,assistant,total recall is a typical sci-fi film <Metaphor> wrapped around </Metaphor> an intresting ( if far fetched ) plot .
-3,"No definition, 8 shots, Original conventional vs creative ratio",17,user,"Can you please identify and tag the metaphors in the following text? 
+3,"Few shot, 8 shots, original ratio",16,assistant,total recall is a typical sci-fi film <Metaphor> wrapped around </Metaphor> an intresting ( if far fetched ) plot .
+3,"Few shot, 8 shots, original ratio",17,user,"Can you please identify and tag the metaphors in the following text? 
 [#TEST_TEXT]"
-4,"No definition, 8 shots, Even conventional vs creative ratio",0,system,"You are a linguistic expert trained in metaphor identification. When the user provides a text, follow this protocol:
+4,"Few shot, 8 shots, even ratio",0,system,"You are a linguistic expert trained in metaphor identification. When the user provides a text, follow this protocol:
 • Identify all metaphorical expressions
 • Wrap each one in <Metaphor> and </Metaphor> tags.
 • Reproduce the rest of the text exactly as written.
 • Do not include any explanation, commentary, or extra content in this message."
-4,"No definition, 8 shots, Even conventional vs creative ratio",1,user,"Can you please identify and tag the metaphors in the following text?
+4,"Few shot, 8 shots, even ratio",1,user,"Can you please identify and tag the metaphors in the following text?
 the rest of the characters are the dullest people imaginable ."
-4,"No definition, 8 shots, Even conventional vs creative ratio",2,assistant,the rest of the characters are the <Metaphor> dullest </Metaphor> people imaginable .
-4,"No definition, 8 shots, Even conventional vs creative ratio",3,user,"Can you please identify and tag the metaphors in the following text? 
+4,"Few shot, 8 shots, even ratio",2,assistant,the rest of the characters are the <Metaphor> dullest </Metaphor> people imaginable .
+4,"Few shot, 8 shots, even ratio",3,user,"Can you please identify and tag the metaphors in the following text? 
 while emotionally unconvincing , the actress is tremendously fun in her juvenile role , perking up the movie like an injection of anti-depressant "
-4,"No definition, 8 shots, Even conventional vs creative ratio",4,assistant,"while emotionally unconvincing , the actress is tremendously fun in her juvenile role , <Metaphor> perking up the movie like an injection of anti-depressant </Metaphor> ."
-4,"No definition, 8 shots, Even conventional vs creative ratio",5,user,"Can you please identify and tag the metaphors in the following text? 
+4,"Few shot, 8 shots, even ratio",4,assistant,"while emotionally unconvincing , the actress is tremendously fun in her juvenile role , <Metaphor> perking up the movie like an injection of anti-depressant </Metaphor> ."
+4,"Few shot, 8 shots, even ratio",5,user,"Can you please identify and tag the metaphors in the following text? 
 court tv junkies will probably pick up the many differences , some subtle and others not , between the american and the british judicial systems ."
-4,"No definition, 8 shots, Even conventional vs creative ratio",6,assistant,"court tv <Metaphor> junkies </Metaphor> will probably <Metaphor> pick up </Metaphor> the many differences , some subtle and others not , between the american and the british judicial systems ."
-4,"No definition, 8 shots, Even conventional vs creative ratio",7,user,"Can you please identify and tag the metaphors in the following text? 
+4,"Few shot, 8 shots, even ratio",6,assistant,"court tv <Metaphor> junkies </Metaphor> will probably <Metaphor> pick up </Metaphor> the many differences , some subtle and others not , between the american and the british judicial systems ."
+4,"Few shot, 8 shots, even ratio",7,user,"Can you please identify and tag the metaphors in the following text? 
 the film , which wanders all over the place without getting anywhere , is remarkably * on * -kilter and , with perhaps the single exception of the always-likable modine ( who's not afraid to stand around in a very unattractive bathing suit surrounded by hunks ) , the entire cast is vague and uninteresting ."
-4,"No definition, 8 shots, Even conventional vs creative ratio",8,assistant,"the film , which <Metaphor> wanders all over the place without getting anywhere </Metaphor> , is remarkably * <Metaphor> on * -kilter </Metaphor> and , with perhaps the single exception of the always-likable modine ( who's not afraid to stand around in a very unattractive bathing suit surrounded by <Metaphor> hunks </Metaphor> ) , the entire cast is <Metaphor> vague </Metaphor> and uninteresting ."
-4,"No definition, 8 shots, Even conventional vs creative ratio",9,user,"Can you please identify and tag the metaphors in the following text? 
+4,"Few shot, 8 shots, even ratio",8,assistant,"the film , which <Metaphor> wanders all over the place without getting anywhere </Metaphor> , is remarkably * <Metaphor> on * -kilter </Metaphor> and , with perhaps the single exception of the always-likable modine ( who's not afraid to stand around in a very unattractive bathing suit surrounded by <Metaphor> hunks </Metaphor> ) , the entire cast is <Metaphor> vague </Metaphor> and uninteresting ."
+4,"Few shot, 8 shots, even ratio",9,user,"Can you please identify and tag the metaphors in the following text? 
 total recall is a typical sci-fi film wrapped around an intresting ( if far fetched ) plot ."
-4,"No definition, 8 shots, Even conventional vs creative ratio",10,assistant,total recall is a typical sci-fi film <Metaphor> wrapped around </Metaphor> an intresting ( if far fetched ) plot .
-4,"No definition, 8 shots, Even conventional vs creative ratio",11,user,"Can you please identify and tag the metaphors in the following text? 
+4,"Few shot, 8 shots, even ratio",10,assistant,total recall is a typical sci-fi film <Metaphor> wrapped around </Metaphor> an intresting ( if far fetched ) plot .
+4,"Few shot, 8 shots, even ratio",11,user,"Can you please identify and tag the metaphors in the following text? 
 it's labute's half hearted attempt to make a crowd pleaser and he doesn't even seem to have half that heart in it ."
-4,"No definition, 8 shots, Even conventional vs creative ratio",12,assistant,it's labute's <Metaphor> half hearted </Metaphor> attempt to make a crowd pleaser and he doesn't even seem to have <Metaphor> half that heart </Metaphor> in it .
-4,"No definition, 8 shots, Even conventional vs creative ratio",13,user,"Can you please identify and tag the metaphors in the following text? 
+4,"Few shot, 8 shots, even ratio",12,assistant,it's labute's <Metaphor> half hearted </Metaphor> attempt to make a crowd pleaser and he doesn't even seem to have <Metaphor> half that heart </Metaphor> in it .
+4,"Few shot, 8 shots, even ratio",13,user,"Can you please identify and tag the metaphors in the following text? 
 since i usually review horror and science fiction films , i feel a little out of my league discussing this teen football movie . ( pun intended . thank you ! )"
-4,"No definition, 8 shots, Even conventional vs creative ratio",14,assistant,"since i usually review horror and science fiction films , i feel a little <Metaphor> out of my league </Metaphor> discussing this teen football movie . ( pun intended . thank you ! )"
-4,"No definition, 8 shots, Even conventional vs creative ratio",15,user,"Can you please identify and tag the metaphors in the following text? 
+4,"Few shot, 8 shots, even ratio",14,assistant,"since i usually review horror and science fiction films , i feel a little <Metaphor> out of my league </Metaphor> discussing this teen football movie . ( pun intended . thank you ! )"
+4,"Few shot, 8 shots, even ratio",15,user,"Can you please identify and tag the metaphors in the following text? 
 instead of tweaking the formula a little to invigorate the proceedings , burns is content to allow the film to ramble aimlessly towards its irritatingly predictable conclusion , offering precious few momentary pleasures along the way ."
-4,"No definition, 8 shots, Even conventional vs creative ratio",16,assistant,"instead of <Metaphor> tweaking </Metaphor> the formula a little to <Metaphor> invigorate </Metaphor> the proceedings , burns is content to allow the film to <Metaphor> ramble aimlessly towards </Metaphor> its irritatingly predictable conclusion , <Metaphor> offering precious few momentary pleasures along the way </Metaphor> ."
-4,"No definition, 8 shots, Even conventional vs creative ratio",17,user,"Can you please identify and tag the metaphors in the following text?
+4,"Few shot, 8 shots, even ratio",16,assistant,"instead of <Metaphor> tweaking </Metaphor> the formula a little to <Metaphor> invigorate </Metaphor> the proceedings , burns is content to allow the film to <Metaphor> ramble aimlessly towards </Metaphor> its irritatingly predictable conclusion , <Metaphor> offering precious few momentary pleasures along the way </Metaphor> ."
+4,"Few shot, 8 shots, even ratio",17,user,"Can you please identify and tag the metaphors in the following text?
 [#TEST_TEXT]"
-104,"V6a. Chain-of-thought, 4 shots, Original conventional vs creative ratio",0,system,"You are a linguistic expert trained in metaphor identification. When the user provides a text, follow this protocol:
+104,"CoT, 4 shots, original ratio",0,system,"You are a linguistic expert trained in metaphor identification. When the user provides a text, follow this protocol:
 • Identify all metaphorical expressions.
 • Wrap each one in <Metaphor> and </Metaphor> tags.
 • Reproduce the rest of the text exactly as written.
 • Do include an explanation of your coding, but no additional commentary or extra content in this message."
-104,"V6a. Chain-of-thought, 4 shots, Original conventional vs creative ratio",1,user,"Can you please identify and tag the metaphors in the following text?
+104,"CoT, 4 shots, original ratio",1,user,"Can you please identify and tag the metaphors in the following text?
 the rest of the characters are the dullest people imaginable ."
-104,"V6a. Chain-of-thought, 4 shots, Original conventional vs creative ratio",2,assistant,"Answer:  
+104,"CoT, 4 shots, original ratio",2,assistant,"Answer:  
 the rest of the characters are the <Metaphor> dullest </Metaphor> people imaginable . 
 Explanation: The word “dullest” has a more basic contemporary meaning: in other contexts, it refers to a lack of physical sharpness. In this example, it describes how uninteresting these people are by comparing them to something literally dull, which makes it a metaphorical usage."
-104,"V6a. Chain-of-thought, 4 shots, Original conventional vs creative ratio",3,user,"Can you please identify and tag the metaphors in the following text? 
+104,"CoT, 4 shots, original ratio",3,user,"Can you please identify and tag the metaphors in the following text? 
 the keen wisdom of an elderly bank robber , the naive ambitions of a sexy hospital nurse , and a partnership that blossoms between the two are the fine components that make up a modest , little caper adventure entitled `where the money is . '"
-104,"V6a. Chain-of-thought, 4 shots, Original conventional vs creative ratio",4,assistant,"Answer:
+104,"CoT, 4 shots, original ratio",4,assistant,"Answer:
 the <Metaphor> keen </Metaphor> wisdom of an elderly bank robber , the naive ambitions of a sexy hospital nurse , and a partnership that <Metaphor> blossoms </Metaphor> between the two are the fine <Metaphor> components </Metaphor> that make up a <Metaphor> modest </Metaphor> , <Metaphor> little </Metaphor> <Metaphor> caper </Metaphor> adventure entitled `where the money is . ' 
 Explanation: 
 keen 
@@ -131,56 +131,56 @@ little
 The word “little” has a more basic contemporary meaning: in other contexts, it refers to small physical size. In this example, it describes the adventure as minor in scale or importance by comparing it to something literally small, which makes it a metaphorical usage. 
 caper
 The word “caper” has a more basic contemporary meaning: in other contexts, it can mean a playful jump or leap. In this example, it describes a lighthearted adventure by comparing it to something literally bounding or skipping, which makes it a metaphorical usage."
-104,"V6a. Chain-of-thought, 4 shots, Original conventional vs creative ratio",5,user,"Can you please identify and tag the metaphors in the following text? 
+104,"CoT, 4 shots, original ratio",5,user,"Can you please identify and tag the metaphors in the following text? 
 and for those viewers out there who would only lay down money for this movie in hopes of seeing pam topless , hate to burst your bubble , but there are no full-fledged nude scenes in barb wire ."
-104,"V6a. Chain-of-thought, 4 shots, Original conventional vs creative ratio",6,assistant,"Answer: 
+104,"CoT, 4 shots, original ratio",6,assistant,"Answer: 
 and for those viewers out there who would only lay down money for this movie in hopes of seeing pam topless , hate to <Metaphor> burst your bubble </Metaphor> , but there are no <Metaphor> full-fledged </Metaphor> nude scenes in barb wire . 
 Explanation: 
 burst your bubble
 The phrase “burst your bubble” has a more basic contemporary meaning: in other contexts, a “bubble” is a thin sphere of liquid enclosing air, and “bursting” it would break it. In this example, it describes shattering someone’s hopes or illusions by comparing them to literally popping a bubble, which makes it a metaphorical usage.
 full-fledged
 The word “full-fledged” has a more basic contemporary meaning: in other contexts, it refers to a bird that has grown all its feathers and is able to fly. In this example, it describes the completeness of potential nude scenes by comparing them to something literally fully developed or feathered, which makes it a metaphorical usage."
-104,"V6a. Chain-of-thought, 4 shots, Original conventional vs creative ratio",7,user,"Can you please identify and tag the metaphors in the following text? 
+104,"CoT, 4 shots, original ratio",7,user,"Can you please identify and tag the metaphors in the following text? 
 while emotionally unconvincing , the actress is tremendously fun in her juvenile role , perking up the movie like an injection of anti-depressant ."
-104,"V6a. Chain-of-thought, 4 shots, Original conventional vs creative ratio",8,assistant,"Answer: 
+104,"CoT, 4 shots, original ratio",8,assistant,"Answer: 
 while emotionally unconvincing , the actress is tremendously fun in her juvenile role , <Metaphor> perking up the movie like an injection of anti-depressant </Metaphor> . 
 Explanation: 
 perking up the movie like an injection of anti-depressant The phrase “perking up” has a more basic contemporary meaning: in other contexts, it can mean physically lifting or raising something, while “injection of anti-depressant” refers literally to administering medication with a needle. In this example, it describes the actress energizing the movie by comparing that effect to something literally injected to elevate mood, which makes it a metaphorical usage."
-104,"V6a. Chain-of-thought, 4 shots, Original conventional vs creative ratio",9,user,"Can you please identify and tag the metaphors in the following text? 
+104,"CoT, 4 shots, original ratio",9,user,"Can you please identify and tag the metaphors in the following text? 
 [#TEST_TEXT]
 Answer: 
 Explanation:"
-105,"V6b. Chain-of-thought, 4 shots, Even conventional vs creative ratio",0,system,"You are a linguistic expert trained in metaphor identification. When the user provides a text, follow this protocol:
+105,"CoT, 4 shots, even ratio",0,system,"You are a linguistic expert trained in metaphor identification. When the user provides a text, follow this protocol:
 • Identify all metaphorical expressions.
 • Wrap each one in <Metaphor> and </Metaphor> tags.
 • Reproduce the rest of the text exactly as written.
 • Do include an explanation of your coding, but no additional commentary or extra content in this message."
-105,"V6b. Chain-of-thought, 4 shots, Even conventional vs creative ratio",1,user,"Can you please identify and tag the metaphors in the following text?
+105,"CoT, 4 shots, even ratio",1,user,"Can you please identify and tag the metaphors in the following text?
 the rest of the characters are the dullest people imaginable ."
-105,"V6b. Chain-of-thought, 4 shots, Even conventional vs creative ratio",2,assistant,"Answer: 
+105,"CoT, 4 shots, even ratio",2,assistant,"Answer: 
 the rest of the characters are the <Metaphor> dullest </Metaphor> people imaginable . 
 Explanation: 
 dullest
 The word “dullest” has a more basic contemporary meaning: in other contexts, it refers to a lack of physical sharpness. In this example, it describes how uninteresting these people are by comparing them to something literally dull, which makes it a metaphorical usage."
-105,"V6b. Chain-of-thought, 4 shots, Even conventional vs creative ratio",3,user,"Can you please identify and tag the metaphors in the following text? 
+105,"CoT, 4 shots, even ratio",3,user,"Can you please identify and tag the metaphors in the following text? 
 while emotionally unconvincing , the actress is tremendously fun in her juvenile role , perking up the movie like an injection of anti-depressant ."
-105,"V6b. Chain-of-thought, 4 shots, Even conventional vs creative ratio",4,assistant,"Answer: 
+105,"CoT, 4 shots, even ratio",4,assistant,"Answer: 
 while emotionally unconvincing , the actress is tremendously fun in her juvenile role , <Metaphor> perking up the movie like an injection of anti-depressant </Metaphor> . 
 Explanation: 
 perking up the movie like an injection of anti-depressant 
 The phrase “perking up” has a more basic contemporary meaning: in other contexts, it can mean physically lifting or raising something, while “injection of anti-depressant” refers literally to administering medication with a needle. In this example, it describes the actress energizing the movie by comparing that effect to something literally injected to elevate mood, which makes it a metaphorical usage."
-105,"V6b. Chain-of-thought, 4 shots, Even conventional vs creative ratio",5,user,"Can you please identify and tag the metaphors in the following text? 
+105,"CoT, 4 shots, even ratio",5,user,"Can you please identify and tag the metaphors in the following text? 
 court tv junkies will probably pick up the many differences , some subtle and others not , between the american and the british judicial systems ."
-105,"V6b. Chain-of-thought, 4 shots, Even conventional vs creative ratio",6,assistant,"Answer: 
+105,"CoT, 4 shots, even ratio",6,assistant,"Answer: 
 court tv <Metaphor> junkies </Metaphor> will probably <Metaphor> pick up </Metaphor> the many differences , some subtle and others not , between the american and the british judicial systems . 
 Explanation: 
 junkies
 The word “junkies” has a more basic contemporary meaning: in other contexts, it refers to people with an addiction to drugs. In this example, it describes people who are strongly fixated on court TV, which makes it a metaphorical usage. 
 pick up
 The phrase “pick up” has a more basic contemporary meaning: in other contexts, it means physically lifting something. In this example, it describes noticing or discerning subtle differences, which makes it a metaphorical usage."
-105,"V6b. Chain-of-thought, 4 shots, Even conventional vs creative ratio",7,user,"Can you please identify and tag the metaphors in the following text? 
+105,"CoT, 4 shots, even ratio",7,user,"Can you please identify and tag the metaphors in the following text? 
 the film , which wanders all over the place without getting anywhere , is remarkably * on * -kilter and , with perhaps the single exception of the always-likable modine ( who's not afraid to stand around in a very unattractive bathing suit surrounded by hunks ) , the entire cast is vague and uninteresting ."
-105,"V6b. Chain-of-thought, 4 shots, Even conventional vs creative ratio",8,assistant,"Answer: 
+105,"CoT, 4 shots, even ratio",8,assistant,"Answer: 
 the film , which <Metaphor> wanders all over the place without getting anywhere </Metaphor> , is remarkably * <Metaphor> on * -kilter </Metaphor> and , with perhaps the single exception of the always-likable modine ( who's not afraid to stand around in a very unattractive bathing suit surrounded by <Metaphor> hunks </Metaphor> ) , the entire cast is <Metaphor> vague </Metaphor> and uninteresting . 
 Explanation: 
 wanders all over the place without getting anywhere 
@@ -191,25 +191,25 @@ hunks
 The word “hunks” has a more basic contemporary meaning: in other contexts, it refers to large pieces of something, like chunks of food or material. Here, it describes physically attractive (possibly stocky and muscley) men, which makes it a metaphorical usage. 
 vague
 The word “vague” has a more basic contemporary meaning: in other contexts, it refers to something that lacks clear shape or definition. In this example, it describes how unclear or undefined the cast’s presence is, which makes it a metaphorical usage."
-105,"V6b. Chain-of-thought, 4 shots, Even conventional vs creative ratio",9,user,"Can you please identify and tag the metaphors in the following text? 
+105,"CoT, 4 shots, even ratio",9,user,"Can you please identify and tag the metaphors in the following text? 
 [#TEST_TEXT]
 Answer: 
 Explanation:"
-106,"V6c. Chain-of-thought, 8 shots, Original conventional vs creative ratio",0,system,"You are a linguistic expert trained in metaphor identification. When the user provides a text, follow this protocol:
+106,"CoT, 8 shots, original ratio",0,system,"You are a linguistic expert trained in metaphor identification. When the user provides a text, follow this protocol:
 • Identify all metaphorical expressions.
 • Wrap each one in <Metaphor> and </Metaphor> tags.
 • Reproduce the rest of the text exactly as written.
 • Do include an explanation of your coding, but no additional commentary or extra content in this message."
-106,"V6c. Chain-of-thought, 8 shots, Original conventional vs creative ratio",1,user,"Can you please identify and tag the metaphors in the following text?
+106,"CoT, 8 shots, original ratio",1,user,"Can you please identify and tag the metaphors in the following text?
 the rest of the characters are the dullest people imaginable ."
-106,"V6c. Chain-of-thought, 8 shots, Original conventional vs creative ratio",2,assistant,"Answer: 
+106,"CoT, 8 shots, original ratio",2,assistant,"Answer: 
 the rest of the characters are the <Metaphor> dullest </Metaphor> people imaginable . 
 Explanation: 
 dullest 
 The word “dullest” has a more basic contemporary meaning: in other contexts, it refers to a lack of physical sharpness. In this example, it describes how uninteresting these people are by comparing them to something literally dull, which makes it a metaphorical usage."
-106,"V6c. Chain-of-thought, 8 shots, Original conventional vs creative ratio",3,user,"Can you please identify and tag the metaphors in the following text? 
+106,"CoT, 8 shots, original ratio",3,user,"Can you please identify and tag the metaphors in the following text? 
 the keen wisdom of an elderly bank robber , the naive ambitions of a sexy hospital nurse , and a partnership that blossoms between the two are the fine components that make up a modest , little caper adventure entitled `where the money is . '"
-106,"V6c. Chain-of-thought, 8 shots, Original conventional vs creative ratio",4,assistant,"Answer: 
+106,"CoT, 8 shots, original ratio",4,assistant,"Answer: 
 the <Metaphor> keen </Metaphor> wisdom of an elderly bank robber , the naive ambitions of a sexy hospital nurse , and a partnership that <Metaphor> blossoms </Metaphor> between the two are the fine <Metaphor> components </Metaphor> that make up a <Metaphor> modest </Metaphor> , <Metaphor> little </Metaphor> <Metaphor> caper </Metaphor> adventure entitled `where the money is . ' 
 Explanation: 
 keen 
@@ -223,18 +223,18 @@ little
 The word “little” has a more basic contemporary meaning: in other contexts, it refers to small physical size. In this example, it describes the adventure as minor in scale or importance by comparing it to something literally small, which makes it a metaphorical usage. 
 caper
 The word “caper” has a more basic contemporary meaning: in other contexts, it can mean a playful jump or leap. In this example, it describes a lighthearted adventure by comparing it to something literally bounding or skipping, which makes it a metaphorical usage."
-106,"V6c. Chain-of-thought, 8 shots, Original conventional vs creative ratio",5,user,"Can you please identify and tag the metaphors in the following text? 
+106,"CoT, 8 shots, original ratio",5,user,"Can you please identify and tag the metaphors in the following text? 
 and for those viewers out there who would only lay down money for this movie in hopes of seeing pam topless , hate to burst your bubble , but there are no full-fledged nude scenes in barb wire ."
-106,"V6c. Chain-of-thought, 8 shots, Original conventional vs creative ratio",6,assistant,"Answer: 
+106,"CoT, 8 shots, original ratio",6,assistant,"Answer: 
 and for those viewers out there who would only lay down money for this movie in hopes of seeing pam topless , hate to <Metaphor> burst your bubble </Metaphor> , but there are no <Metaphor> full-fledged </Metaphor> nude scenes in barb wire . 
 Explanation: 
 burst your bubble 
 The phrase “burst your bubble” has a more basic contemporary meaning: in other contexts, a “bubble” is a thin sphere of liquid enclosing air, and “bursting” it would break it. In this example, it describes shattering someone’s hopes or illusions by comparing them to literally popping a bubble, which makes it a metaphorical usage. 
 full-fledged
 The word “full-fledged” has a more basic contemporary meaning: in other contexts, it refers to a bird that has grown all its feathers and is able to fly. In this example, it describes the completeness of potential nude scenes by comparing them to something literally fully developed or feathered, which makes it a metaphorical usage."
-106,"V6c. Chain-of-thought, 8 shots, Original conventional vs creative ratio",7,user,"Can you please identify and tag the metaphors in the following text? 
+106,"CoT, 8 shots, original ratio",7,user,"Can you please identify and tag the metaphors in the following text? 
 director anthony waller , who displayed a confident , edgy style in mute witness , stumbles with this material , never being able to make the comedy and horror elements gel ."
-106,"V6c. Chain-of-thought, 8 shots, Original conventional vs creative ratio",8,assistant,"Answer: 
+106,"CoT, 8 shots, original ratio",8,assistant,"Answer: 
 director anthony waller , who displayed a confident , <Metaphor> edgy </Metaphor> style in mute witness , <Metaphor> stumbles </Metaphor> with this <Metaphor> material </Metaphor> , never being able to make the comedy and horror <Metaphor> elements </Metaphor> <Metaphor> gel </Metaphor> . 
 Explanation: 
 edgy 
@@ -247,9 +247,9 @@ elements
 The word “elements” has a more basic contemporary meaning: in other contexts, it refers to fundamental chemical or natural components. In this example, it describes components of comedy and horror by comparing them to something literally elemental, which makes it a metaphorical usage. 
 gel
 The word “gel” has a more basic contemporary meaning: in other contexts, it refers to a thick, jelly-like substance. In this example, it describes how comedy and horror blend together by comparing that process to something physically gelling, which makes it a metaphorical usage."
-106,"V6c. Chain-of-thought, 8 shots, Original conventional vs creative ratio",9,user,"Can you please identify and tag the metaphors in the following text? 
+106,"CoT, 8 shots, original ratio",9,user,"Can you please identify and tag the metaphors in the following text? 
 we also see that the black pimps have a number of white girls in their stable and we see how they treat them like dirt , as the film implies that this could be payback for the days of slavery , of master and slave relations ."
-106,"V6c. Chain-of-thought, 8 shots, Original conventional vs creative ratio",10,assistant,"Answer: 
+106,"CoT, 8 shots, original ratio",10,assistant,"Answer: 
 we also see that the black pimps have a number of white girls in their <Metaphor> stable </Metaphor> and we see how they treat them <Metaphor> like dirt </Metaphor> , as the film implies that this could be <Metaphor> payback </Metaphor>for the days of slavery , of master and slave relations . 
 Explanation: 
 stable
@@ -258,62 +258,62 @@ like dirt
 The phrase “like dirt” has a more basic contemporary meaning: in other contexts, “dirt” is literally soil. In this example, it describes the disrespectful way these people are treated by comparing them to something literally worthless or soiled, which makes it a metaphorical usage. 
 payback
 The word “payback” has a more basic contemporary meaning: in other contexts, it refers to returning a sum of money owed. In this example, it describes taking revenge by comparing it to literally repaying a debt, which makes it a metaphorical usage."
-106,"V6c. Chain-of-thought, 8 shots, Original conventional vs creative ratio",11,user,"Can you please identify and tag the metaphors in the following text? 
+106,"CoT, 8 shots, original ratio",11,user,"Can you please identify and tag the metaphors in the following text? 
 have you ever seen a movie that you really enjoyed , then when you look back , you realize there was something missing ?"
-106,"V6c. Chain-of-thought, 8 shots, Original conventional vs creative ratio",12,assistant,"Answer: 
+106,"CoT, 8 shots, original ratio",12,assistant,"Answer: 
 have you ever seen a movie that you really enjoyed , then when you <Metaphor> look back </Metaphor> , you realize there was something missing ?
 Explanation:
 look back
 The phrase “look back” has a more basic contemporary meaning: in other contexts, it refers to physically turning around to see behind oneself. In this example, it describes reflecting on a past experience by comparing it to literally looking over one’s shoulder, which makes it a metaphorical usage."
-106,"V6c. Chain-of-thought, 8 shots, Original conventional vs creative ratio",13,user,"Can you please identify and tag the metaphors in the following text? 
+106,"CoT, 8 shots, original ratio",13,user,"Can you please identify and tag the metaphors in the following text? 
 while emotionally unconvincing , the actress is tremendously fun in her juvenile role , perking up the movie like an injection of anti-depressant ."
-106,"V6c. Chain-of-thought, 8 shots, Original conventional vs creative ratio",14,assistant,"Answer: 
+106,"CoT, 8 shots, original ratio",14,assistant,"Answer: 
 while emotionally unconvincing , the actress is tremendously fun in her juvenile role , <Metaphor> perking up the movie like an injection of anti-depressant </Metaphor> . 
 Explanation: 
 perking up the movie like an injection of anti-depressant
 The phrase “perking up” has a more basic contemporary meaning: in other contexts, it can mean physically lifting or raising something, while “injection of anti-depressant” refers literally to administering medication with a needle. In this example, it describes the actress energizing the movie by comparing that effect to something literally injected to elevate mood, which makes it a metaphorical usage."
-106,"V6c. Chain-of-thought, 8 shots, Original conventional vs creative ratio",15,user,"Can you please identify and tag the metaphors in the following text? 
+106,"CoT, 8 shots, original ratio",15,user,"Can you please identify and tag the metaphors in the following text? 
 total recall is a typical sci-fi film wrapped around an intresting ( if far fetched ) plot ."
-106,"V6c. Chain-of-thought, 8 shots, Original conventional vs creative ratio",16,assistant,"Answer: 
+106,"CoT, 8 shots, original ratio",16,assistant,"Answer: 
 total recall is a typical sci-fi film <Metaphor> wrapped around </Metaphor> an intresting ( if far fetched ) plot . 
 Explanation: 
 wrapped around
 The phrase “wrapped around” has a more basic contemporary meaning: in other contexts, it refers to physically encircling an object. In this example, it describes how the plot surrounds or encompasses the film’s story by comparing it to something literally wrapped, which makes it a metaphorical usage."
-106,"V6c. Chain-of-thought, 8 shots, Original conventional vs creative ratio",17,user,"Can you please identify and tag the metaphors in the following text? 
+106,"CoT, 8 shots, original ratio",17,user,"Can you please identify and tag the metaphors in the following text? 
 [#TEST_TEXT]
 Answer: 
 Explanation:"
-107,"V6d. Chain-of-thought, 8 shots, Even conventional vs creative ratio",0,system,"You are a linguistic expert trained in metaphor identification. When the user provides a text, follow this protocol:
+107,"CoT, 8 shots, even ratio",0,system,"You are a linguistic expert trained in metaphor identification. When the user provides a text, follow this protocol:
 • Identify all metaphorical expressions.
 • Wrap each one in <Metaphor> and </Metaphor> tags.
 • Reproduce the rest of the text exactly as written.
 • Do include an explanation of your coding, but no additional commentary or extra content in this message."
-107,"V6d. Chain-of-thought, 8 shots, Even conventional vs creative ratio",1,user,"Can you please identify and tag the metaphors in the following text? 
+107,"CoT, 8 shots, even ratio",1,user,"Can you please identify and tag the metaphors in the following text? 
 the rest of the characters are the dullest people imaginable ."
-107,"V6d. Chain-of-thought, 8 shots, Even conventional vs creative ratio",2,assistant,"Answer: 
+107,"CoT, 8 shots, even ratio",2,assistant,"Answer: 
 the rest of the characters are the <Metaphor> dullest </Metaphor> people imaginable . 
 Explanation: 
 dullest
 The word “dullest” has a more basic contemporary meaning: in other contexts, it refers to a lack of physical sharpness. In this example, it describes how uninteresting these people are by comparing them to something literally dull, which makes it a metaphorical usage."
-107,"V6d. Chain-of-thought, 8 shots, Even conventional vs creative ratio",3,user,"Can you please identify and tag the metaphors in the following text? 
+107,"CoT, 8 shots, even ratio",3,user,"Can you please identify and tag the metaphors in the following text? 
 while emotionally unconvincing , the actress is tremendously fun in her juvenile role , perking up the movie like an injection of anti-depressant ."
-107,"V6d. Chain-of-thought, 8 shots, Even conventional vs creative ratio",4,assistant,"Answer: 
+107,"CoT, 8 shots, even ratio",4,assistant,"Answer: 
 while emotionally unconvincing , the actress is tremendously fun in her juvenile role , <Metaphor> perking up the movie like an injection of anti-depressant </Metaphor> . 
 Explanation: 
 perking up the movie like an injection of anti-depressant
 The phrase “perking up” has a more basic contemporary meaning: in other contexts, it can mean physically lifting or raising something, while “injection of anti-depressant” refers literally to administering medication with a needle. In this example, it describes the actress energizing the movie by comparing that effect to something literally injected to elevate mood, which makes it a metaphorical usage."
-107,"V6d. Chain-of-thought, 8 shots, Even conventional vs creative ratio",5,user,"Can you please identify and tag the metaphors in the following text? 
+107,"CoT, 8 shots, even ratio",5,user,"Can you please identify and tag the metaphors in the following text? 
 court tv junkies will probably pick up the many differences , some subtle and others not , between the american and the british judicial systems ."
-107,"V6d. Chain-of-thought, 8 shots, Even conventional vs creative ratio",6,assistant,"Answer: 
+107,"CoT, 8 shots, even ratio",6,assistant,"Answer: 
 court tv <Metaphor> junkies </Metaphor> will probably <Metaphor> pick up </Metaphor> the many differences , some subtle and others not , between the american and the british judicial systems . 
 Explanation: 
 junkies
 The word “junkies” has a more basic contemporary meaning: in other contexts, it refers to people with an addiction to drugs. In this example, it describes people who are strongly fixated on court TV, which makes it a metaphorical usage. 
 pick up
 The phrase “pick up” has a more basic contemporary meaning: in other contexts, it means physically lifting something. In this example, it describes noticing or discerning subtle differences, which makes it a metaphorical usage."
-107,"V6d. Chain-of-thought, 8 shots, Even conventional vs creative ratio",7,user,"Can you please identify and tag the metaphors in the following text? 
+107,"CoT, 8 shots, even ratio",7,user,"Can you please identify and tag the metaphors in the following text? 
 the film , which wanders all over the place without getting anywhere , is remarkably * on * -kilter and , with perhaps the single exception of the always-likable modine ( who's not afraid to stand around in a very unattractive bathing suit surrounded by hunks ) , the entire cast is vague and uninteresting ."
-107,"V6d. Chain-of-thought, 8 shots, Even conventional vs creative ratio",8,assistant,"Answer: 
+107,"CoT, 8 shots, even ratio",8,assistant,"Answer: 
 the film , which <Metaphor> wanders all over the place without getting anywhere </Metaphor> , is remarkably * <Metaphor> on * -kilter </Metaphor> and , with perhaps the single exception of the always-likable modine ( who's not afraid to stand around in a very unattractive bathing suit surrounded by <Metaphor> hunks </Metaphor> ) , the entire cast is <Metaphor> vague </Metaphor> and uninteresting . 
 Explanation:
 wanders all over the place without getting anywhere
@@ -324,32 +324,32 @@ hunks
 The word “hunks” has a more basic contemporary meaning: in other contexts, it refers to large pieces of something, like chunks of food or material. Here, it describes physically attractive (possibly stocky and muscley) men, which makes it a metaphorical usage. 
 vague
 The word “vague” has a more basic contemporary meaning: in other contexts, it refers to something that lacks clear shape or definition. In this example, it describes how unclear or undefined the cast’s presence is, which makes it a metaphorical usage."
-107,"V6d. Chain-of-thought, 8 shots, Even conventional vs creative ratio",9,user,"Can you please identify and tag the metaphors in the following text? 
+107,"CoT, 8 shots, even ratio",9,user,"Can you please identify and tag the metaphors in the following text? 
 total recall is a typical sci-fi film wrapped around an intresting ( if far fetched ) plot ."
-107,"V6d. Chain-of-thought, 8 shots, Even conventional vs creative ratio",10,assistant,"Answer: 
+107,"CoT, 8 shots, even ratio",10,assistant,"Answer: 
 total recall is a typical sci-fi film <Metaphor> wrapped around </Metaphor> an intresting ( if far fetched ) plot . 
 Explanation: 
 wrapped around
 “Wrapped around” usually refers to physically covering or encircling an object. In this example, it describes how the sci-fi film’s storyline encompasses the plot by comparing it to something literally wrapped, which makes it a metaphorical usage."
-107,"V6d. Chain-of-thought, 8 shots, Even conventional vs creative ratio",11,user,"Can you please identify and tag the metaphors in the following text? 
+107,"CoT, 8 shots, even ratio",11,user,"Can you please identify and tag the metaphors in the following text? 
 it's labute's half hearted attempt to make a crowd pleaser and he doesn't even seem to have half that heart in it ."
-107,"V6d. Chain-of-thought, 8 shots, Even conventional vs creative ratio",12,assistant,"Answer: 
+107,"CoT, 8 shots, even ratio",12,assistant,"Answer: 
 it's labute's <Metaphor> half hearted </Metaphor> attempt to make a crowd pleaser and he doesn't even seem to have <Metaphor> half that heart </Metaphor> in it . 
 Explanation: 
 half hearted 
 The phrase “half hearted” has a more basic contemporary meaning: in other contexts, it implies having only half of one’s literal heart. At the same time, in these cases, the heart is used to metaphorically represent effort. To do something ‘wholeheartedly’ means to do something with full effort. Here, therefore, to make a ‘half hearted attempt’ describes a lack of genuine effort, which makes it a metaphorical usage. 
 half that heart
 The phrase “half that heart” continues the metaphor of a literal heart, suggesting even less genuine commitment. It describes how the director invests minimal passion, making it a metaphorical usage."
-107,"V6d. Chain-of-thought, 8 shots, Even conventional vs creative ratio",13,user,"Can you please identify and tag the metaphors in the following text? 
+107,"CoT, 8 shots, even ratio",13,user,"Can you please identify and tag the metaphors in the following text? 
 since i usually review horror and science fiction films , i feel a little out of my league discussing this teen football movie . ( pun intended . thank you ! )"
-107,"V6d. Chain-of-thought, 8 shots, Even conventional vs creative ratio",14,assistant,"Answer: 
+107,"CoT, 8 shots, even ratio",14,assistant,"Answer: 
 since i usually review horror and science fiction films , i feel a little <Metaphor> out of my league </Metaphor> discussing this teen football movie . ( pun intended . thank you ! ) 
 Explanation: 
 out of my league
 “League” has a more basic contemporary meaning as a level or division in sports. Here, “out of my league” describes feeling unqualified or out of place, which makes it a metaphorical usage."
-107,"V6d. Chain-of-thought, 8 shots, Even conventional vs creative ratio",15,user,"Can you please identify and tag the metaphors in the following text? 
+107,"CoT, 8 shots, even ratio",15,user,"Can you please identify and tag the metaphors in the following text? 
 instead of tweaking the formula a little to invigorate the proceedings , burns is content to allow the film to ramble aimlessly towards its irritatingly predictable conclusion , offering precious few momentary pleasures along the way ."
-107,"V6d. Chain-of-thought, 8 shots, Even conventional vs creative ratio",16,assistant,"Answer: 
+107,"CoT, 8 shots, even ratio",16,assistant,"Answer: 
 instead of <Metaphor> tweaking </Metaphor> the formula a little to <Metaphor> invigorate </Metaphor> the proceedings , burns is content to allow the film to <Metaphor> ramble aimlessly towards </Metaphor> its irritatingly predictable conclusion , <Metaphor> offering precious few momentary pleasures along the way </Metaphor> . 
 Explanation: 
 tweaking 
@@ -360,7 +360,7 @@ ramble aimlessly towards
 “Ramble” usually refers to walking or roaming without direction. In this example, it describes the film’s storyline meandering toward its ending, which makes it a metaphorical usage. 
 offering precious few momentary pleasures along the way
 “Offering” commonly refers to physically presenting or giving something. In this example, it describes providing only limited enjoyable moments, which are not tangible objects that can be literally ‘offered’, which makes it a metaphorical usage. Further, ‘offering’ is generally something that can only be done by an animate actor. In this case, the film is being described as doing the ‘offering’, making it an example of a personification metaphor."
-107,"V6d. Chain-of-thought, 8 shots, Even conventional vs creative ratio",17,user,"Can you please identify and tag the metaphors in the following text? 
+107,"CoT, 8 shots, even ratio",17,user,"Can you please identify and tag the metaphors in the following text? 
 [#TEST_TEXT]
 Answer: 
 Explanation:"
