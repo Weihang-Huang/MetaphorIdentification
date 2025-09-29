@@ -57,6 +57,7 @@ Next, the LLM predicts the token for the second blank and produces these probabi
 Again, greedy search selects the highest-probability token, **and**, as the output for the second blank. 
 
 The same process is repeated for the third and fourth blanks. After completing all steps, we end up with:
+
 > I have two things: an apple and a pear
 
 This is an example of text generation. Text generation works as a "continuation of writing," extending the text based on the given context. However, this continuation does not guarantee that the output will follow the user’s instructions or desired style. 
@@ -83,7 +84,7 @@ Strictly speaking, these models are chatbots, not pure language models, because 
 
 Typically, users interact with a large language model (LLM) through a **server-client structure**, as shown below:
 
-![Slide9.jpg](C:\Users\MiraMoe\Desktop\Markdown\Slide9.jpg)
+![Slide9.jpg](C:\Users\MiraMoe\Desktop\Markdown\InferringInterfaceFig.jpg)
 
 ### Open-parameters and Closed-parameters LLM
 
@@ -108,12 +109,12 @@ Using an open-parameter LLM gives the user **total control** of the model. If ne
 ---
 
 However, using open-parameter LLMs comes with **trade-offs**.  
+
 - **Setup** – Users must find their own hosting server or use a software library to start the inference process.  
 - **Complexity** – This makes open-parameter models more complicated to use compared to closed-parameter models.  
 - **Hardware requirements** – Running an LLM locally requires a powerful computer.  
 
 Typically, you will need **at least 8GB of memory** and a **graphics card (GPU)** to run even the smallest open-parameter models, such as **Llama 1B**. Without sufficient resources, performance will be slow or unstable.
-
 
 ## Ollama Setup
 
@@ -199,7 +200,7 @@ You should see a brief help message listing available sub-commands, for example:
 > Usage:  
 >  ollama [flags]  
 >  ollama [command]  
->  
+> 
 > Available Commands:  
 >  serve Start Ollama  
 >  create Create a model from a Modelfile  
@@ -213,11 +214,11 @@ You should see a brief help message listing available sub-commands, for example:
 >  cp Copy a model  
 >  rm Remove a model  
 >  help Help about any command  
->  
+> 
 > Flags:  
 >  -h, --help Help for Ollama  
 >  -v, --version Show version information  
->  
+> 
 > Use "ollama [command] --help" for more information about a command.
 
 If you don’t see this output, double-check your installation. If the issue persists, seek assistance.
@@ -346,4 +347,3 @@ Click the extension icon to launch it. It will automatically connect to your loc
 
 Now you have a fully local LLM, completely under your control.  
 Since it runs on your own PC, all data stays private, free from outside censorship, and with full transparency.
-
