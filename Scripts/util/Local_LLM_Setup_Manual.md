@@ -84,7 +84,7 @@ Strictly speaking, these models are chatbots, not pure language models, because 
 
 Typically, users interact with a large language model (LLM) through a **server-client structure**, as shown below:
 
-![Slide9.jpg](C:\Users\MiraMoe\Desktop\Markdown\InferringInterfaceFig.jpg)
+![InferringInterfaceFig](InferringInterfaceFig.jpg)
 
 ### Open-parameters and Closed-parameters LLM
 
