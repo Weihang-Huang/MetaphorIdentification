@@ -32,7 +32,7 @@ If you use this repository or its resources in your research, please cite the pa
 ```
 Fuoli, M., Huang, W., Littlemore, J., Turner, S., & Wilding, E. (2025). 
 Metaphor Identification Using Large Language Models: A Comparison of RAG, Prompt Engineering, and Fine-Tuning.
-arXiv preprint, arXiv:xxxx.xxxxx
+arXiv preprint, arXiv:2509.24866
 ```
 
 **BibTeX format:**
@@ -41,7 +41,7 @@ arXiv preprint, arXiv:xxxx.xxxxx
 @article{fuoli2025metaphor,
   title={Metaphor Identification Using Large Language Models: A Comparison of RAG, Prompt Engineering, and Fine-Tuning},
   author={Fuoli, Matteo and Huang, Weihang and Littlemore, Jeannette and Turner, Sarah and Wilding, Ellen},
-  journal={arXiv preprint arXiv:xxxx.xxxxx},
+  journal={arXiv preprint arXiv:2509.24866},
   year={2025}
 }
 ```
