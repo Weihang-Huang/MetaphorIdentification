@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository accompanies the paper *“Metaphor Identification Using Large Language Models: A Comparison of RAG, Prompt Engineering, and Fine-Tuning”* by Fuoli et al. (2025), available as a preprint on [arXiv](URL).
+This repository accompanies the paper *“Metaphor Identification Using Large Language Models: A Comparison of RAG, Prompt Engineering, and Fine-Tuning”* by Fuoli et al. (2025), available as a preprint on [arXiv]([URL](https://arxiv.org/abs/2509.24866)).
 
 The repository contains all materials and code necessary to **replicate the study**, which investigates how large language models (LLMs) can be used to automatically identify and annotate metaphorical expressions in full texts. We compare three core approaches:
 
