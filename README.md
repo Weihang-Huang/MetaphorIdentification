@@ -32,7 +32,7 @@ If you use this repository or its resources in your research, please cite the pa
 ```
 Fuoli, M., Huang, W., Littlemore, J., Turner, S., & Wilding, E. (2026). 
 Metaphor Identification Using Large Language Models: A Comparison of RAG, Prompt Engineering, and Fine-Tuning.
-Applied Corpus Linguistics, DOI: [https://doi.org/10.1016/j.acorp.2026.100204](https://doi.org/10.1016/j.acorp.2026.100204).
+Applied Corpus Linguistics, DOI: https://doi.org/10.1016/j.acorp.2026.100204.
 ```
 
 **BibTeX format:**
